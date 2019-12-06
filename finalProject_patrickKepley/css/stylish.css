@@ -1,0 +1,377 @@
+/* 
+========================================================================
+BASE STYLES
+========================================================================
+ */
+ 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  background-image: url("https://i.imgur.com/zTqMOiX.png"); 
+  background-size: cover;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+ }
+
+body {
+  font-size: 16px;
+}
+
+body a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* 
+========================================================================
+NAV STYLES
+========================================================================
+ */
+
+@media (min-width: 300px) {
+
+  header {
+    background: #000; 
+    color: #fff;   
+    margin-bottom: 0 auto;
+    text-align: center;
+    letter-spacing: 12px;
+  }
+
+  header h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 250%;
+    text-align: center;
+    color: #fff;
+    /* letter-spacing: 12px; */
+    /* padding: 10px; */
+  }
+
+
+  header ul {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 200%;
+  }
+
+  ul li {
+    margin: 20px 0;
+  }
+
+  .photo img {
+  width: 80%;
+  height: auto;
+
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  header {
+    background: rgba(0, 0, 0, .6)
+  }
+   
+  h1 a{
+    font-size: 300%;
+    transition: .5s;
+  }
+  
+  h1 a:hover {
+    color: #dc0c29;
+    font-size: 320%;
+  } 
+  
+  header ul{
+    display: flex;
+    font-family: 'Permanent Marker', cursive;
+    justify-content: center;
+    /* padding-bottom: 25px; */
+    font-size: 200%;
+  }
+  
+  li a {
+    letter-spacing: 3px;
+    transition: .5s;
+    margin: 0 20px;
+  }
+
+  .gallery {
+    margin-right: 60px;
+  }
+  
+  .gallery a:hover {
+    color:#dc0c29; 
+    font-size: 140%;
+    text-decoration: underline;
+  }
+  
+  .charities a:hover {
+    color: #dc0c29;
+    font-size: 140%; 
+    text-decoration: underline;
+  }
+
+}
+  
+/* 
+========================================================================
+HOME PAGE MAIN STYLES
+========================================================================
+ */
+
+@media (min-width: 300px) {
+
+  .welcome span {
+    display: block;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    font-size: 250%;
+    margin: 30px 0;
+    }
+
+  #moreText {
+    font-family: 'Roboto', sans-serif;
+    font-size: 120%;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .5);
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 5px;
+    line-height: 125%;
+    padding: 17px;
+  }
+
+  section .intro {
+    background: rgba(220, 12, 41, .5);
+    width: 85%;
+    border-radius: 5px;
+    margin: 10px auto;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 120%;
+    padding: 23px;
+    letter-spacing: 2px;
+    line-height: 125%;
+  }
+
+  .photo {
+    width: 85%;
+    margin: 10px auto;
+    
+  }
+
+  .photo img {
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  small 
+  {
+    padding: 30px 50px 0 0;
+  } 
+  /* {
+    margin: 30px 300px 0 0;
+  } */
+
+
+
+  small div {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40%;
+    color: gray;
+    width: 95%;
+    /* margin: 30px 300px 0 0; */
+    /* padding: 17px; */
+    text-align: right;
+  }
+
+
+ }
+
+ @media (min-width: 1000px) {
+
+  #moreText {
+    display: none;
+    width: 60%;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 10%;
+  }
+
+  .photo {
+    width: 40%;
+  }
+
+  section .intro {
+    width: 40%;
+  }
+
+  .photo img {
+  -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  }
+
+  .photo img:hover {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    
+  }
+
+
+}
+
+ /* 
+========================================================================
+FOOTER STYLES
+========================================================================
+ */
+
+footer {
+  background: #000;  
+}
+
+footer .social {
+  margin: 10px auto;
+  text-align: center;
+}
+footer img {
+  width: 50px;
+  margin: 20px;
+}
+
+footer aside {
+  font-family: 'Roboto', sans-serif;
+  color: gray;
+  font-size: 75%;
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+
+
+
+/* 
+========================================================================
+GALLERY PAGE STYLES
+========================================================================
+ */
+
+
+ /* main {
+  padding: 50px 0 0 0; 
+} */
+
+
+.gallerypage {
+  margin: 0 auto;
+}
+
+.photographs {
+  font-family: 'Permanent Marker', sans-serif;
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+  padding: 50px;
+  
+}
+
+.slick {
+  width: 80%;
+  margin: auto;
+}
+
+.content img{
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.slick-prev {
+  border: none;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  margin: 20px auto;
+
+}
+
+.slick-next {
+  border: none;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  margin: 20px auto;
+}
+
+
+/* 
+========================================================================
+CHARITY PAGE STYLES
+========================================================================
+ */
+
+ .adopt p {
+  width: 60%;
+  margin: 30px auto;
+  line-height: 35px;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 175%;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.give {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.give div {
+  margin: 40px auto;
+  height: 30%;
+  width: 80%;
+  background-color: rgba(220, 12, 41, .3);
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 7px;
+  transition: .5s;
+}
+
+.give div:hover{
+  background-color: rgba(220, 12, 41, .5);
+}
+
+.give img {
+  padding: 5px;
+}
+
+.give aside {
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 23px;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+}
+
